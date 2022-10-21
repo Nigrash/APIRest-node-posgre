@@ -11,7 +11,7 @@ const pool = new Pool({
 
 const getUsers = async(req, res) => {
     try{
-        const response = await pool.query('SELECT * FROM users');
+        const response = await pool.query('SELECT * FROM users order by id');
         res.status(200).json(response.rows);
         /*console.log(response.rows);
         console.log('users');*/
@@ -78,7 +78,7 @@ const deleteUser = async(req, res) =>{
         const id = req.params.id;
         const response = await pool.query('DELETE FROM users WHERE id = $1', [id]);
         console.log(response)
-        req.json(`Users ${id} Eliminado Satisfactoriamente`);
+        req.json('Users ${id} Eliminado Satisfactoriamente');
     }
     catch(error){
         res.send(error);

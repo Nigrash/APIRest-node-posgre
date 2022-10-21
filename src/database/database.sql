@@ -10,4 +10,5 @@ CREATE TABLE users(
 cual es la diferencia de uso? o no imprta cual use?*/
 INSERT INTO users (Nombre, Apellido, Correo)
     values ('Yaya Prakasha', 'Ruiz Lopez', 'yayaruiz141@gmail.com'),
-            ('Yelsyn Adrid','Cruz Hernandez','yelsynhernandez@gmail.com');
+            ('Yelsyn Adrid','Cruz Hernandez','yelsynhernandez@gmail.com'),
+            ('Victoria','Herrarte','victoria@gmail.com');
